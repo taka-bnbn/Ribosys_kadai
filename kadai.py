@@ -40,7 +40,7 @@ def calculate_take_home_salary(gross_income):
 def main():
     # コマンドライン引数から年収を取得
     if len(sys.argv) != 2:
-        print("使い方: python kadai.py [年収]")
+        print("使い方: python3 kadai.py [年収]")
         sys.exit(1)
 
     try:
