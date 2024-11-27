@@ -2,18 +2,17 @@ import sys
 
 def calculate_take_home_salary(gross_income):
     """
-    年収から手取りを計算する関数
-    - 所得税、住民税、社会保険料を考慮
+    年収から手取りを計算
+    - 社会保険料、所得税、住民税を考慮
     """
-    # 社会保険料（約15%）を計算
+    # 社会保険料（約15%）
     social_insurance = gross_income * 0.15
 
-    # 課税所得 = 年収 - 社会保険料 - 基礎控除（48万円）
+    # 課税所得を計算
     taxable_income = gross_income - social_insurance - 480000
-    if taxable_income < 0:
-        taxable_income = 0
+    taxable_income = max(taxable_income, 0)  # 負の値をゼロに補正
 
-    # 所得税（簡略計算: 超過累進税率）
+    # 所得税（累進課税）
     if taxable_income <= 1950000:
         income_tax = taxable_income * 0.05
     elif taxable_income <= 3300000:
@@ -32,7 +31,7 @@ def calculate_take_home_salary(gross_income):
     # 住民税（約10%）
     resident_tax = taxable_income * 0.10
 
-    # 手取り額 = 年収 - 社会保険料 - 所得税 - 住民税
+    # 手取り額
     take_home = gross_income - social_insurance - income_tax - resident_tax
 
     return round(take_home, 2)
@@ -46,15 +45,17 @@ def main():
 
     try:
         annual_income = int(sys.argv[1])
-    except ValueError:
-        print("年収には数値を入力してください．")
+        if annual_income < 0:
+            raise ValueError("年収は正の数である必要があります。")
+    except ValueError as e:
+        print(f"入力エラー: {e}")
         sys.exit(1)
 
     take_home_salary = calculate_take_home_salary(annual_income)
-    
     byebyemoney = annual_income - take_home_salary
 
-    print(f"年収 {annual_income:,.0f} 円の場合，手取りは約 {take_home_salary:,.0f} 円です．{byebyemoney:,.0f}は国の下へ去りました．")
+    print(f"年収 {annual_income:,.0f} 円の場合，手取りは約 {take_home_salary:,.0f} 円です．")
+    print(f"{byebyemoney:,.0f} 円は国の下へ去りました．")
 
 
 if __name__ == "__main__":
