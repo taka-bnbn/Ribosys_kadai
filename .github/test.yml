@@ -1,4 +1,4 @@
-name: kadai.py
+name: test
 on: push
 jobs: 
   test:
