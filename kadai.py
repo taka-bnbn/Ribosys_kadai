@@ -5,8 +5,8 @@ def print_board(board):
     col_numbers = "   " + " ".join(f"{i:2}" for i in range(len(board)))
     print(col_numbers)
     for idx, row in enumerate(board):
-        # 行番号を表示してボードを描画
-        print(f"{idx:2} " + " ".join(row))
+        # 行番号を詰めて固定幅で表示
+        print(f"{idx:2} " + " ".join(f"{cell:2}" for cell in row))
     print()
 
 def check_winner(board, player):
