@@ -54,7 +54,7 @@ def main():
     
     byebyemoney = annual_income - take_home_salary
 
-    print(f"年収 {annual_income:,.0f} 円の場合，手取りは約 {take_home_salary:,.0f} 円です．\n{byebyemoney:,.0fは国の下へ去りました．}")
+    print(f"年収 {annual_income:,.0f} 円の場合，手取りは約 {take_home_salary:,.0f} 円です．{byebyemoney:,.0f}は国の下へ去りました．")
 
 
 if __name__ == "__main__":
