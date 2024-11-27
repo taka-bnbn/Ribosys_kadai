@@ -11,15 +11,15 @@ ng (){
 res=0
 
 ###NORMAL INPUT###
-out=$(seq 5 | ./plus)
+out=$(seq 5 | ./kadai)
 [ "${out}" = 15 ] || ng "$LINENO"
 
 ###STRANGE INPUT###
-out=$(echo あ| ./plus)
+out=$(echo あ| ./kadai)
 [ "$?" = 1 ]	 || ng "$LINENO"
 [ "${out}" = "" ]|| ng "$LINENO"
 
-out=$(echo | ./plus)
+out=$(echo | ./kadai)
 [ "$?" = 1 ]   	  || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
