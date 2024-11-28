@@ -10,13 +10,13 @@ ng () {
 res=0
 
 ### NORMAL INPUT ###
-out=$(python3 kadai.py 1000000)
+out=$(./kadai 1000000)
 expected="年収 1,000,000 円の場合，手取りは約 794,500 円です．
 205,500 円は国の下へ去りました．"
 [ "${out}" = "${expected}" ] || ng "$LINENO"
 
 ### STRANGE INPUT ###
-out=$(python3 kadai.py 2>&1)
+out=$(./kadai 2>&1)
 [ "$?" -ne 0 ] || ng "$LINENO"
 expected_error="使い方: python3 kadai.py [年収]"
 [ "${out}" = "${expected_error}" ] || ng "$LINENO"
