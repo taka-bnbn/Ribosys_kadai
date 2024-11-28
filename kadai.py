@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText :2024 Takaya Mizumaki
+# SPDX-License-Identifier: BSD-3=Clause
+
+
 import sys
 #calculate_take_home_salary
 #social_insurance
