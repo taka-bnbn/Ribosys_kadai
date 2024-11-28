@@ -18,7 +18,7 @@ expected="年収 1,000,000 円の場合，手取りは約 794,500 円です．
 ### STRANGE INPUT ###
 out=$(./kadai 2>&1)
 [ "$?" -ne 0 ] || ng "$LINENO"
-expected_error="使い方: python3 kadai.py [年収]"
+expected_error="使い方: ./kadai.py [年収]"
 [ "${out}" = "${expected_error}" ] || ng "$LINENO"
 
 ### CHECK RESULT ###
