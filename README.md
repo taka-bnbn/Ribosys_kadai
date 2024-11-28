@@ -24,8 +24,8 @@ git clone https://github.com/taka-bnbn/Ribosys_kadai.git
 - Robosys_kadaiに移動
 ```bash
 cd Robosys_kadai
-- 自分の年収が700万円の時
 ```
+- 自分の年収が700万円の時
 
 ```bash
 　 python3 kadai.py 700
