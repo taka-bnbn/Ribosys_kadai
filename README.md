@@ -1,6 +1,7 @@
 # 手取り計算プログラム
 
-[![test](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml/badge.svg)](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml)
+# 自分の年収がいくら国に徴収されているか気になりませんか？
+
 # 概要
 
 このプログラムは,日本の一般的な所得税,住民税,社会保険料の計算方法を簡略化して反映したものです,<br>
@@ -13,7 +14,17 @@
 住民税:     課税所得の約10%を基準に計算しています.<br>
 基礎控除:   2020年以降,基礎控除額は48万円です.<br># Ribosys_kadai
 
+# インストール方法
 
+
+- リポジトリをクローン
+```bash
+git clone https://github.com/taka-bnbn/Ribosys_kadai.git
+```
+- Robosys_kadaiに移動
+```bash
+cd Robosys_kadai
+```
 
 
 [![test](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml/badge.svg)](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml)
