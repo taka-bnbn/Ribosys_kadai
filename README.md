@@ -45,7 +45,7 @@ https://www.musashi-corporation.com/wealthhack/annual-income-net-income
 ```
 
 ## テスト環境
-- Ubuntu 22.04 LTS
+- Ubuntu 20.04 LTS
 
 
 ## Copyright
