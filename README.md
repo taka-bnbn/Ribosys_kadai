@@ -17,7 +17,10 @@
 
 ## インストール&実行方法
 
-
+- パーミッション変更
+```bash
+chmod +x kadai
+```
 - リポジトリをクローン
 ```bash
 git clone https://github.com/taka-bnbn/Ribosys_kadai.git
@@ -27,9 +30,8 @@ git clone https://github.com/taka-bnbn/Ribosys_kadai.git
 cd Robosys_kadai
 ```
 - (例)自分の年収が700万円の時
-
 ```bash
-python3 kadai.py 700
+./kadai.py 700
 ```
 
 ## 必要なソフトウェア
