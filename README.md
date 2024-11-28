@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![test](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml)
 
-### 自分の年収がいくら国に徴収されているか気になりませんか？
+### 自<font color="##ff1493">赤く表示されます分の年収がいくら国に徴収されているか気になりませんか？</font>
 
 ## 概要
 
