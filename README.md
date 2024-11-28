@@ -12,3 +12,8 @@
 所得税:     超過累進課税方式を適用し,控除額を反映しました.<br>
 住民税:     課税所得の約10%を基準に計算しています.<br>
 基礎控除:   2020年以降,基礎控除額は48万円です.<br># Ribosys_kadai
+
+
+
+
+[![test](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml/badge.svg)](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml)
