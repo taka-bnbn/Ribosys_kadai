@@ -14,7 +14,7 @@
 - 住民税:     課税所得の約10%を基準に計算しています.<br>
 - 基礎控除:   2020年以降,基礎控除額は48万円です.<br># Ribosys_kadai
 
-# インストール方法
+# インストール&実行方法
 
 
 - リポジトリをクローン
@@ -24,10 +24,9 @@ git clone https://github.com/taka-bnbn/Ribosys_kadai.git
 - Robosys_kadaiに移動
 ```bash
 cd Robosys_kadai
-```
-## 実行方法
-
 - 自分の年収が700万円の時
+```
+
 ```bash
 　 python3 kadai.py 700
 ```
