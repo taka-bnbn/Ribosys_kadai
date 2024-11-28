@@ -1,5 +1,5 @@
 # 手取り計算プログラム
-
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause))
 ## 自分の年収がいくら国に徴収されているか気になりませんか？
 
 ## 概要
@@ -47,11 +47,6 @@ https://www.musashi-corporation.com/wealthhack/annual-income-net-income
 - Ubuntu 22.04 LTS
 
 
-[![test](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml/badge.svg)](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml)
+## Copyright
 
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-
-
-
-# Copyright
-@ 2024 Takaya Mizumaki 
+@ 2024 Takaya Mizumaki
