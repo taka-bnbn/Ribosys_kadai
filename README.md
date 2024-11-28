@@ -25,6 +25,17 @@ git clone https://github.com/taka-bnbn/Ribosys_kadai.git
 ```bash
 cd Robosys_kadai
 ```
+## 実行方法
+
+- 自分の年収が700万円の時
+```bash
+　 python3 kadai.py 700
+```
+
+
+
+
+
 
 
 [![test](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml/badge.svg)](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml)
