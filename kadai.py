@@ -1,18 +1,16 @@
 import sys
+#calculate_take_home_salary
+#social_insurance
+#gross_income
+#taxable_insurance
+#
 
 def calculate_take_home_salary(gross_income):
-    """
-    年収から手取りを計算
-    - 社会保険料、所得税、住民税を考慮
-    """
-    # 社会保険料（約15%）
     social_insurance = gross_income * 0.15
 
-    # 課税所得を計算
     taxable_income = gross_income - social_insurance - 480000
-    taxable_income = max(taxable_income, 0)  # 負の値をゼロに補正
+    taxable_income = max(taxable_income, 0)
 
-    # 所得税（累進課税）
     if taxable_income <= 1950000:
         income_tax = taxable_income * 0.05
     elif taxable_income <= 3300000:
@@ -28,17 +26,14 @@ def calculate_take_home_salary(gross_income):
     else:
         income_tax = taxable_income * 0.45 - 4796000
 
-    # 住民税（約10%）
     resident_tax = taxable_income * 0.10
 
-    # 手取り額
     take_home = gross_income - social_insurance - income_tax - resident_tax
 
     return round(take_home, 2)
 
 
 def main():
-    # コマンドライン引数から年収を取得
     if len(sys.argv) != 2:
         print("使い方: python3 kadai.py [年収]")
         sys.exit(1)
