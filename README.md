@@ -28,7 +28,7 @@ cd Robosys_kadai
 - 自分の年収が700万円の時
 
 ```bash
-　 python3 kadai.py 700
+python3 kadai.py 700
 ```
 
 ## 必要なソフトウェア
@@ -42,13 +42,16 @@ cd Robosys_kadai
 ```bash
 https://www.musashi-corporation.com/wealthhack/annual-income-net-income
 ```
-- @ 2024 Takaya Mizumaki
 
 ## テスト環境
 - Ubuntu 22.04 LTS
 
 
-
-
-
 [![test](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml/badge.svg)](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml)
+
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+
+
+# Copyright
+@ 2024 Takaya Mizumaki 
