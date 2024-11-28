@@ -1,12 +1,12 @@
 <p align="center">
-  <img width="200" img src="https://github.com/user-attachments/assets/8d9332b3-e3c9-48a5-b9f1-cf349d146c9e" alt="Animation" />
+  <img width="300" img src="https://github.com/user-attachments/assets/8d9332b3-e3c9-48a5-b9f1-cf349d146c9e" alt="Animation" />
 </p>
 
 
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![test](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/taka-bnbn/Ribosys_kadai/actions/workflows/test.yml)
 
-## 自分の年収がいくら国に徴収されているか気になりませんか？
+### 自分の年収がいくら国に徴収されているか気になりませんか？
 
 ## 概要
 
