@@ -32,7 +32,7 @@ chmod +x tedorikeisan
 ```
 - (例)自分の年収が700万円の時
 ```bash
-echo 10000000 | ./tedorikeisan
+echo 70000000 | ./tedorikeisan
 ```
 
 ## 動作環境
