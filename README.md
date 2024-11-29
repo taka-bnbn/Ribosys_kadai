@@ -49,8 +49,8 @@ https://www.musashi-corporation.com/wealthhack/annual-income-net-income
 
 ## Copyright
 
-@ 2024 Takaya Mizumaki
-水牧鷹哉
 <p align="center">
   <img width="400" img src="https://github.com/user-attachments/assets/8d9332b3-e3c9-48a5-b9f1-cf349d146c9e" alt="Animation" />
 </p>
+
+© 2024 Takaya Mizumaki 水牧鷹哉
