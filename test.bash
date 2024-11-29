@@ -20,7 +20,8 @@ expected="年収を入力してください(円) : 年収 1,000,000 円の場合
 ### STRANGE INPUT ###
 out=$(echo ""| ./tedorikeisan)
 input(\n)
-out=$(echo | \n )
+out=$(echo 0.0| \n )
+[ "$?" -ne 0 ] || ng "$LINENO"
 expected_error="入力エラー: 年収は正の数である必要があります。"
 [ "${out}" = "${expected_error}" ] || ng "$LINENO"
 
