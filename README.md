@@ -28,11 +28,11 @@ cd Robosys_kadai
 ```
 - パーミッション変更
 ```bash
-chmod +x kadai
+chmod +x tedorikeisan
 ```
 - (例)自分の年収が700万円の時
 ```bash
-./tedorikeisan 700
+echo 10000000 | ./tedorikeisan
 ```
 
 ## 動作環境

@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-# SPDX-FileCopyrightText :2024 Takaya Mizumaki
+# SPDX-FileCopyrightText: 2024 Takaya Mizumaki
 # SPDX-License-Identifier: BSD-3-Clause
+
+import sys
 
 def calculate_take_home_salary(gross_income):
     social_insurance = gross_income * 0.15
@@ -31,13 +33,13 @@ def calculate_take_home_salary(gross_income):
 
 def main():
     try:
-        annual_income = input("年収を入力してください（円）： ")
-        if not annual_income.strip().isdigit() or int(annual_income) < 0:
+        input_data = sys.stdin.read().strip()
+        if not input_data.isdigit() or int(input_data) < 0:
             raise ValueError("年収は正の数である必要があります。")
-        annual_income = int(annual_income)
+        annual_income = int(input_data)
     except ValueError as e:
-        print(f"入力エラー: {e}")
-        return
+        print(f"入力エラー: {e}", file=sys.stderr)
+        sys.exit(1)
 
     take_home_salary = calculate_take_home_salary(annual_income)
     byebyemoney = annual_income - take_home_salary
