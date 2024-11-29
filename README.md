@@ -35,9 +35,7 @@ $ chmod +x tedorikeisan
 $ echo 7000000 | ./tedorikeisan
 ```
 - 出力例
-<p align="center">
 <img width="379" alt="image" src="https://github.com/user-attachments/assets/1da9b776-8e16-447a-9c50-18ea2655763b">
-</p>
 
 ## 動作環境
 - テスト済みバージョン: 3.7~3.11
