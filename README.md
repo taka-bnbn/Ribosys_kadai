@@ -18,18 +18,17 @@
 
 ## 導入方法
 
-
 - リポジトリをクローン
 ```bash
 git clone https://github.com/taka-bnbn/Robosys_kadai.git
 ```
-- パーミッション変更
-```bash
-chmod +x kadai
-```
 - Robosys_kadaiに移動
 ```bash
 cd Robosys_kadai
+```
+- パーミッション変更
+```bash
+chmod +x kadai
 ```
 - (例)自分の年収が700万円の時
 ```bash
