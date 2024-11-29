@@ -14,17 +14,18 @@
 - 社会保険料: 健康保険,年金保険,雇用保険などを含みます. 年収の約15%程度と見積もっています.<br>
 - 所得税:     超過累進課税方式を適用し,控除額を反映しました.<br>
 - 住民税:     課税所得の約10%を基準に計算しています.<br>
-- 基礎控除:   2020年以降,基礎控除額は48万円です.<br># Ribosys_kadai
+- 基礎控除:   2020年以降,基礎控除額は48万円です.<br>
 
 ## 導入方法
 
+
+- リポジトリをクローン
+```bash
+git clone https://github.com/taka-bnbn/Robosys_kadai.git
+```
 - パーミッション変更
 ```bash
 chmod +x kadai
-```
-- リポジトリをクローン
-```bash
-git clone https://github.com/taka-bnbn/Ribosys_kadai.git
 ```
 - Robosys_kadaiに移動
 ```bash
@@ -32,12 +33,12 @@ cd Robosys_kadai
 ```
 - (例)自分の年収が700万円の時
 ```bash
-./kadai.py 700
+./tedorikeisan 700
 ```
 
-## 必要なソフトウェア
-- Python
-  - テスト済みバージョン: 3.7~3.11
+## 動作環境
+- テスト済みバージョン: 3.7~3.11
+- Ubuntu 22.04 LTS
 
 ## ライセンス
 
@@ -46,10 +47,6 @@ cd Robosys_kadai
 ```bash
 https://www.musashi-corporation.com/wealthhack/annual-income-net-income
 ```
-
-## テスト環境
-- Ubuntu 22.04 LTS
-
 
 ## Copyright
 
