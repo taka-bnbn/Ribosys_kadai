@@ -32,7 +32,7 @@ chmod +x tedorikeisan
 ```
 - (例)自分の年収が700万円の時
 ```bash
-echo 70000000 | ./tedorikeisan
+echo 7000000 | ./tedorikeisan
 ```
 
 ## 動作環境
@@ -44,7 +44,7 @@ echo 70000000 | ./tedorikeisan
 - 3条項BSDライセンスの下，再頒布及び使用が許可されます．
 - このコマンドの社会保険料，所得税，住民税，基礎控除の計算方法は以下のサイトを基にコードを書いています．
 ```bash
-https://www.musashi-corporation.com/wealthhack/annual-income-net-income
+[AboutMe](https://www.musashi-corporation.com/wealthhack/annual-income-net-income)
 ```
 
 ## Copyright
