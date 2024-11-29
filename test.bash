@@ -10,14 +10,15 @@ ng () {
 res=0
 
 ### NORMAL INPUT ###
-out=$(echo "1000000" | ./tedorikeisan)
-out=$(echo "${out}" | tail -n +2)  # 最初の1行（プロンプト）を削除
-expected="年収 1,000,000 円の場合，手取りは約 794,500 円です．
+out=$(echo ""| ./tedorikeisan)
+out=$(echo 1000000 | \n ) # 最初の1行（プロンプト）を削除
+expected="年収を入力してください(円) : 年収 1,000,000 円の場合，手取りは約 794,500 円です．
 205,500 円は国の下へ去りました．"
 [ "${out}" = "${expected}" ] || ng "$LINENO"
 
 ### STRANGE INPUT ###
-out=$(echo "" | ./tedorikeisan 2>&1)
+out=$(echo ""|\n)
+out=$(echo " " | ./tedorikeisan 2>&1)
 out=$(echo "${out}" | tail -n +2)  # 最初の1行（プロンプト）を削除
 [ "$?" -ne 0 ] || ng "$LINENO"
 expected_error="入力エラー: 年収は正の数である必要があります。"
@@ -26,4 +27,3 @@ expected_error="入力エラー: 年収は正の数である必要がありま�
 ### CHECK RESULT ###
 [ "$res" -eq 0 ] && echo OK
 exit $res
-
