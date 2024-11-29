@@ -1,14 +1,6 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText :2024 Takaya Mizumaki
-# SPDX-License-Identifier: BSD-3=Clause
-
-
-import sys
-#calculate_take_home_salary
-#social_insurance
-#gross_income
-#taxable_insurance
-#
+# SPDX-License-Identifier: BSD-3-Clause
 
 def calculate_take_home_salary(gross_income):
     social_insurance = gross_income * 0.15
@@ -37,26 +29,20 @@ def calculate_take_home_salary(gross_income):
 
     return round(take_home, 2)
 
-
 def main():
-    if len(sys.argv) != 2:
-        print("使い方: ./kadai [年収]")
-        sys.exit(1)
-
     try:
-        annual_income = int(sys.argv[1])
+        annual_income = int(input("年収を入力してください（円）： "))
         if annual_income < 0:
             raise ValueError("年収は正の数である必要があります。")
     except ValueError as e:
         print(f"入力エラー: {e}")
-        sys.exit(1)
+        return
 
     take_home_salary = calculate_take_home_salary(annual_income)
     byebyemoney = annual_income - take_home_salary
 
     print(f"年収 {annual_income:,.0f} 円の場合，手取りは約 {take_home_salary:,.0f} 円です．")
     print(f"{byebyemoney:,.0f} 円は国の下へ去りました．")
-
 
 if __name__ == "__main__":
     main()
