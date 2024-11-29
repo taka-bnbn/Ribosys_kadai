@@ -42,10 +42,7 @@ echo 7000000 | ./tedorikeisan
 ## ライセンス
 
 - 3条項BSDライセンスの下，再頒布及び使用が許可されます．
-- このコマンドの社会保険料，所得税，住民税，基礎控除の計算方法は以下のサイトを基にコードを書いています．
-```bash
-[AboutMe](https://www.musashi-corporation.com/wealthhack/annual-income-net-income)
-```
+- このコマンドの社会保険料，所得税，住民税，基礎控除の計算方法は[このサイト](https://www.musashi-corporation.com/wealthhack/annual-income-net-income)を基にコードを書いています．
 
 ## Copyright
 © 2024 Takaya Mizumaki 水牧鷹哉
